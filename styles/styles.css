@@ -139,3 +139,48 @@ footer {
 #last-modify {
     color: var(--light-blue);
 }
+
+/* LESSON 2 */
+.header {
+    background-color: var(--dark-blue);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 8px 8px 8px #0000008a;
+}
+
+.header h1, .header h2 {
+    margin: 5px;
+}
+
+#lesson2-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.rule-section {
+    background-color: #00ffff31;
+    margin: 4%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px #0000008a;
+}
+
+.rule-section h3 {
+    background-color: #3B1B72;
+    margin: 0px;
+    padding: 0.5em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.section-content {
+    font-size: 0.8em;
+    padding: 15px;
+}
+
+.rule-image {
+    width: 100%;
+    margin-top: 15px;
+    border: 2px solid var(--dark-blue);
+    border-radius: 8px;
+}
+
