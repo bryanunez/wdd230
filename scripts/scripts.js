@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 // Current year
 const currentDate = new Date();
 let currentYear = null;
