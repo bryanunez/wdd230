@@ -54,6 +54,10 @@ header ul {
     list-style-type: none;
 }
 
+header a {
+    display: flex;
+}
+
 ul li a img {
     width: 2.5em
 }
