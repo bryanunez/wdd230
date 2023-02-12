@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="icon" href="images/logo-circle.png">
     <title>Península Chamber of Commerce | Home</title>
 </head>
@@ -15,6 +14,7 @@
     <header>
         <a href="index.html"><img src="images/logo-horizontal.png" alt="Península Chamber of Commerce's logo"></a>
         <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="primary-nav">
                 <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="">Directory</a></li>
@@ -30,11 +30,19 @@
         </div>
         <div id="date"><aside>Date</aside></div>
     </header>
+    <div id="responsive-nav" class="hide">
+        <ul class="small-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="">Join</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
     <main>
+        <section id="hero" class="home-section"><h2>Hero with site name and call to action</h2></section>
         <section id="event" class="home-section"><h2>Event</h2></section>
         <section id="weather" class="home-section"><h2>Weather</h2></section>
         <section id="join" class="home-section"><h2>Join</h2></section>
-        <section id="hero" class="home-section"><h2>Hero with site name and call to action</h2></section>
         <section id="news" class="home-section"><h2>News Release</h2></section>
         <section id="spotlights" class="home-section">
             <div class="spotlight"><h2>Spotlight 1</h2></div>

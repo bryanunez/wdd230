@@ -26,3 +26,16 @@ const fulldate = new Intl.DateTimeFormat("en-UK", {
 	dateStyle: "full"
 }).format(currentDate);
 topDate.innerHTML = `<em>${fulldate}</em>`;
+
+/* Hamburger Menu */
+function toggleMenu() {
+	if (document.getElementById('responsive-nav').classList.contains('open')) {
+		document.getElementById('responsive-nav').classList.replace("open", "hide");
+	} else {
+		document.getElementById('responsive-nav').classList.replace("hide", "open");
+	}
+	document.getElementById('hamburgerBtn').classList.toggle("open");
+}
+
+const x = document.getElementById('hamburgerBtn');
+x.onclick = toggleMenu;

@@ -1,0 +1,88 @@
+@media only screen and (max-width: 1600px) {
+
+    .social-media {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: end;
+        padding-right: 10px;
+    }
+
+    .social-media img {
+        margin-right: 10px;
+        margin-left: 10px;
+        vertical-align: middle;
+        width: 50px;
+    }
+
+    nav {
+        grid-column: 3/4;
+        display: block;
+        vertical-align: middle;
+    }
+
+    div.hide ul {
+        display: none;
+    }
+    div.hide {
+        display: block;
+        background-color: var(--dark-blue);
+        padding-top: 0;
+        position: fixed;
+        z-index: 1;
+        right: 0;
+        height: 100%;
+        width: 0px;
+        transition: .3s;
+    }
+    div.open {
+        display: block;
+        background-color: var(--dark-blue);
+        padding-top: 0;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        height: 100%;
+        width: 40vw;
+        transition: .3s;
+    }
+    .small-nav {
+        font-size: 1.4em;
+        font-family: var(--heading-font);
+        text-decoration: none;
+        list-style-type: none;
+        display: block;
+        padding: 0px;
+        margin: 0;
+    }
+    .small-nav li {
+        display: block;
+    }
+    .small-nav li a {
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        color: var(--light-blue);
+    }
+    .small-nav li a:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: .5s;
+    }
+    li.active a {
+        color: var(--blue);
+        text-decoration: underline;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    nav button {display: block;}
+
+    nav ul.open {display: block;}
+
+    nav ul {display: none;}
+
+    #hamburgerBtn span:nth-child(1) {display: block;}
+    #hamburgerBtn span:nth-child(2) {display: none;}
+
+    #hamburgerBtn.open span:nth-child(1) {display: none;}
+    #hamburgerBtn.open span:nth-child(2) {display: block;}
+}

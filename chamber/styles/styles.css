@@ -58,6 +58,37 @@ ul li a img {
     width: 2.5em
 }
 
+/* Responsive Nav */
+div.hide ul {
+    display: none;
+}
+div.hide {
+    display: none;
+}
+div.open {
+    display: none;
+}
+/* .small-nav {
+    font-size: 1.4em;
+    font-family: var(--heading-font);
+    text-decoration: none;
+    list-style-type: none;
+    display: block;
+    padding: 0px;
+}
+.small-nav li {
+    display: block;
+}
+.small-nav li a {
+    display: block;
+    text-decoration: none;
+
+}
+.small-nav li a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .5s;
+} */
+
 nav ul {
     display: flex;
     align-items: center;
@@ -79,7 +110,7 @@ nav a {
     border-radius: 15px;
 }
 
-nav ul li.active a {
+li.active a {
     color: var(--blue);
     text-decoration: underline;
     background-color: rgba(0, 0, 0, 0.2);
@@ -88,6 +119,18 @@ nav ul li.active a {
 nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     transition: .5s;
+}
+
+/* Hamburger button CSS */
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 3rem;
+    color: var(--light-blue);
+}
+nav button {
+    display: none;
 }
 
 .social-media {
@@ -123,6 +166,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     padding: 15px;
+    /* height: 100vh; */
 }
 
 .home-section {
@@ -169,6 +213,7 @@ main {
     border-radius: 10px;
     padding: 15px;
     margin: 10px;
+    height: 100%;
 }
 
 /* Footer */

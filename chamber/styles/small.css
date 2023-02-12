@@ -1,0 +1,7 @@
+@media only screen and (max-width: 900px) {
+    div.open {
+        width: 100%;
+    }
+    main {display: block;}
+    footer {display: block;}
+}
