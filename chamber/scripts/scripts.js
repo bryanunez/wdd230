@@ -39,3 +39,18 @@ function toggleMenu() {
 
 const x = document.getElementById('hamburgerBtn');
 x.onclick = toggleMenu;
+
+/* Banner on top */
+const today = new Date();
+const bannerElmnt = document.getElementById('banner');
+let weekday = today.getDay();
+
+function displayBanner() {
+	if (weekday == 1) {
+		bannerElmnt.classList.replace("hide", "show-banner");
+	} else if (weekday == 2) {
+		bannerElmnt.classList.replace("hide", "show-banner");
+	}
+}
+
+displayBanner();

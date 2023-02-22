@@ -26,13 +26,23 @@
 
 body {
     margin: 0 auto;
-    font-size: 28px;
+    font-size: 22px;
     font-family: var(--paragraph-font);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--headline-color-on-white);
+}
+
+/* Banner */
+.show-banner {
+    display: block;
+}
+#banner {
+    text-align: center;
+    background-color: var(--paragraph-background-color);
+    font-size: 0.7em;
 }
 
 /* Header and Nav */
@@ -170,14 +180,22 @@ main {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     padding: 15px;
-    /* height: 100vh; */
 }
 
 .home-section {
     background-color: var(--paragraph-background-color);
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
+    text-align: center;
+}
+
+.home-section p {
+    margin: 0;
+}
+
+.emoji {
+    font-size: 3em;
 }
 
 #event {
@@ -198,6 +216,7 @@ main {
 #hero {
     grid-column: 2/3;
     grid-row: 1/3;
+    background-image: url(../images/hero-image.png);
 }
 
 #news {
@@ -215,8 +234,9 @@ main {
 .spotlight {
     background-color: var(--paragraph-in-section);
     border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     padding: 15px;
-    margin: 10px;
     height: 100%;
 }
 
