@@ -26,7 +26,7 @@
 
 body {
     margin: 0 auto;
-    font-size: 22px;
+    font-size: 18px;
     font-family: var(--paragraph-font);
 }
 
@@ -49,14 +49,34 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     display: grid;
-    grid-template-columns: 3fr 5fr 1fr;
+    grid-template-columns: 3fr 4fr 3fr;
     background-color: var(--dark-blue);
     row-gap: 0px;
-    padding: .3em;
+    padding: 1vw;
+    padding-top: 0px;
+    font-size: 1em;
+    font-family: var(--heading-font);
 }
 
+.header-logo {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.header-logo a {
+    text-decoration: none;
+}
+
+.header-logo span {
+    color: var(--light-blue);
+    align-self: center;
+    margin-left: 10px;
+}
+
+.logo {width: 100px;}
+
 header img {
-    width: 25vw;
     align-self: center;
 }
 
@@ -106,22 +126,21 @@ div.open {
 nav ul {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     /* margin: 10%; */
 }
 
 nav {
     align-self: center;
     vertical-align: middle;
-    font-size: 1em;
-    font-family: var(--heading-font);
 }
 
 nav a {
     text-decoration: none;
     color: var(--light-blue);
-    padding: 2rem 3vw;
+    padding: 1rem 1vw;
     border-radius: 15px;
+    margin: .5vw;
 }
 
 li.active a {
@@ -155,12 +174,12 @@ nav button {
 
 .social-media ul {
     display: flex;
-    justify-content: space-around;
-    padding: 0px;
+    justify-content: end;
 }
 
 .social-media ul li {
     vertical-align: middle;
+    margin-left: 1vw;
 }
 
 .social-media ul li a img:hover {
@@ -173,6 +192,8 @@ nav button {
     grid-row: 2;
     background-color: var(--light-blue);
     text-align: center;
+    font-family: var(--paragraph-font);
+    padding: .1em;
 }
 
 /* Main Content */
@@ -216,7 +237,15 @@ main {
 #hero {
     grid-column: 2/3;
     grid-row: 1/3;
-    background: url(../images/hero-image.png) no-repeat center;
+    padding: 0px;
+    background: transparent;
+}
+
+#hero img {
+    width: 100%;
+    z-index: 0;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 #news {
@@ -278,3 +307,10 @@ footer div.info img {
     grid-column: 1/3;
     text-align: center;
 }
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

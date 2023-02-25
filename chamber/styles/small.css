@@ -9,4 +9,29 @@
     footer {display: block;}
     footer div.info {display: block; text-align: center;}
     #spotlights div:nth-child(3){display: block;}
+    .home-section {margin-left: 0; margin-right: 0;}
+    .name {display: none;}
+    .header-logo a img.logo {width: 70px;}
+    .social-media ul {display: none;}
+    
+    .social-media-small {
+        grid-column: 3/4;
+        align-self: center;
+        vertical-align: middle;
+    }
+
+    .social-media-small ul {
+        display: flex;
+        justify-content: end;
+    }
+
+    .social-media-small ul li {
+        vertical-align: middle;
+        margin-left: 1vw;
+    }
+
+    .social-media-small ul li a img:hover {
+        opacity: .5;
+        transition: .5s;
+    }
 }

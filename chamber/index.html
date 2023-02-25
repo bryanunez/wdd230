@@ -15,7 +15,12 @@
 <body>
     <div id="banner" class="hide">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
     <header>
-        <a href="index.html"><img src="images/logo-horizontal.png" alt="Península Chamber of Commerce's logo"></a>
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="images/logo-circle.png" alt="Península Chamber of Commerce's logo" class="logo">
+                <span class="name">Península Chamber of Commerce</span>
+            </a>
+        </div>
         <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="primary-nav">
@@ -39,10 +44,20 @@
             <li><a href="">Directory</a></li>
             <li><a href="">Join</a></li>
             <li><a href="">Contact</a></li>
+            <li><a href="http://facebook.com"><img src="images/facebook-icon.png" alt="Facebook link"></a></li>
         </ul>
+        <div class="social-media-small">
+            <ul>
+                <li><a href="http://facebook.com"><img src="images/facebook-icon.png" alt="Facebook link"></a></li>
+                <li><a href="http://instagram.com"><img src="images/instagram-icon.png" alt="Instagram link"></a></li>
+            </ul>
+        </div>
     </div>
     <main>
-        <section id="hero" class="home-section"><h3>Hero with site name and call to action</h3></section>
+        <picture id="hero" class="home-section">
+            <source media="(max-width: 700px)" srcset="images/hero-image-700w.jpg">
+            <img src="images/hero-image.jpg" alt="Cancún's Hotel Zone">
+        </picture>
         <section id="event" class="home-section"><h3>La Isla Cancún</h3><p>Join us for the inaguration of  La Isla Cancún</p><hr><p>Thursday at 3 p.m</p></section>
         <section id="weather" class="home-section">
             <h3>Weather</h3>

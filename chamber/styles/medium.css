@@ -5,6 +5,10 @@
         grid-template-columns: 2fr 1fr;
     }
 
+    header {
+        grid-template-columns: 8fr 1fr 1fr;
+    }
+
     .social-media {
         grid-column: 2/3;
         grid-row: 1/2;
@@ -13,12 +17,12 @@
         padding-right: 10px;
     }
 
-    .social-media img {
+    /* .social-media img {
         margin-right: 10px;
         margin-left: 10px;
         vertical-align: middle;
         width: 50px;
-    }
+    } */
 
     nav {
         grid-column: 3/4;
@@ -79,7 +83,7 @@
         background-color: rgba(0, 0, 0, 0.2);
     }
 
-    nav button {display: block;}
+    nav button {display: block; line-height: normal;}
 
     nav ul.open {display: block;}
 
