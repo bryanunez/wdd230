@@ -17,17 +17,9 @@
         padding-right: 10px;
     }
 
-    /* .social-media img {
-        margin-right: 10px;
-        margin-left: 10px;
-        vertical-align: middle;
-        width: 50px;
-    } */
-
     nav {
         grid-column: 3/4;
         display: block;
-        vertical-align: middle;
     }
 
     div.hide ul {
