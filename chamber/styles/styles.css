@@ -273,7 +273,7 @@ main {
 footer {
     background-color: var(--dark-blue);
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 3fr 1fr;
     padding: 1em;
 }
 
@@ -291,6 +291,7 @@ footer div.info {
     grid-template-columns: auto 1fr;
     grid-gap: 20px;
     vertical-align: middle;
+    align-items: center;
 }
 
 footer div.info img {
@@ -301,7 +302,9 @@ footer div.info img {
 .contact {
     align-self: center;
     text-align: center;
+    display: block;
 }
+
 
 .bottom {
     grid-column: 1/3;
