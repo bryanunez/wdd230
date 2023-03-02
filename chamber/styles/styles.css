@@ -312,6 +312,52 @@ footer div.info img {
     text-align: center;
 }
 
+/*----- Discover Page CSS -----*/
+
+#discover-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
+    text-align: center;
+}
+
+#discover-title {
+    text-align: left;
+    padding: 20px;
+    padding-top: 0;
+}
+
+#discover-title h1 {
+    text-align: center;
+}
+
+div.attraction-container {
+    background-color: var(--paragraph-background-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+div.attraction-container picture {
+    object-fit: cover;
+}
+
+div.attraction-container img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* LAZY LOAD CSS */
+div.attraction-container picture img[data-src] {
+    filter: blur(0.3em);
+}
+
+div.attraction-container picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";

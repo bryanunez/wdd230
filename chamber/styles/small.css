@@ -38,4 +38,9 @@
         opacity: .5;
         transition: .5s;
     }
+    /* ------- DISCOVER PAGE --------- */
+
+    #discover-main {display: block;}
+    div.attraction-container {display: block; margin: 0 auto; margin-bottom: 20px;}
+
 }
