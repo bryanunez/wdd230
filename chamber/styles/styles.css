@@ -354,7 +354,7 @@ div.attraction-container picture img[data-src] {
 
 div.attraction-container picture img {
     filter: blur(0em);
-    transition: filter 0.5s;
+    transition: filter 0.3s;
 }
 
 
