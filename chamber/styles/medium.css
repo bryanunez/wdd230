@@ -6,7 +6,7 @@
     }
 
     header {
-        grid-template-columns: 8fr 1fr 1fr;
+        grid-template-columns: 8fr 1fr auto;
     }
 
     .social-media {

@@ -156,7 +156,9 @@ nav ul li a:hover {
 
 /* Hamburger button CSS */
 nav button {
-    margin: .2rem 2vw;
+    margin: 0;
+    padding: 0;
+    width: 44px;
     background: transparent;
     border: none;
     font-size: 3rem;
