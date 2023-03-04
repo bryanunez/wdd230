@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Cormorant:wght@700&family=Crimson+Text&display=swap');
+
+:root {
+    /* Colors */
+  --black: #000000;
+  --blue: #22658C;
+  --light-blue: #17BEE8; 
+  --dark-blue: #0F1E30;
+
+  /* Fonts */
+  --heading-font: 'Cinzel', serif;
+  --paragraph-font: 'Crimson Text', serif;
+
+  /* Standards */
+  --headline-color-on-white: #22658C;  /* headlines on a white background */ 
+  --headline-color-on-color: #0F1E30; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #000000; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #0F1E30; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #c3f3ff;
+  --nav-link-color: #17BEE8;
+  --nav-background-color: #0F1E30;
+  --nav-hover-link-color: #000000;
+  --nav-hover-background-color: #17BEE8;
+  --paragraph-in-section: #9bebff;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    height: 50vh;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+caption {
+    caption-side: bottom;
+}
+
+thead {
+    color: var(--light-blue);
+}
+
+th {
+    background-color: #22658C;
+    color: var(--black);
+    padding: 6px 12px;
+}
+
+th:first-child {
+    background-color: var(--dark-blue);
+    color: var(--light-blue);
+}
+
+td {
+    border: 1px solid var(--dark-blue);
+    padding: 6px 12px;
+}
+
+tr:nth-child(even) {
+    background-color: #c3f3ff6f;
+}
